@@ -26,8 +26,8 @@ ALL_UTILS = \
 	Utils/niReg \
 	Utils/niLicense
 
-ALL_MONO_PROJS = \
-	Wrappers/OpenNI.net
+#ALL_MONO_PROJS = \
+#	Wrappers/OpenNI.net
 
 ALL_JAVA_PROJS = \
 	Wrappers/OpenNI.jni \
@@ -67,12 +67,12 @@ else
 	endif
 endif
 
-MONO_SAMPLES = \
-	Samples/SimpleRead.net
+#MONO_SAMPLES = \
+#	Samples/SimpleRead.net
 
-MONO_FORMS_SAMPLES = \
-	Samples/SimpleViewer.net \
-	Samples/UserTracker.net
+#MONO_FORMS_SAMPLES = \
+#	Samples/SimpleViewer.net \
+#	Samples/UserTracker.net
 	
 JAVA_SAMPLES = \
 	Samples/SimpleRead.java \
