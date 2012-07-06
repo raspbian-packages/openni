@@ -4,13 +4,11 @@ BIN_DIR = ../../Bin
 
 INC_DIRS = \
 	../../../../Include \
-	../../../../Source \
-	../../../../Externals/TinyXml
+	../../../../Source
 
 SRC_FILES = \
 	../../../../Source/OpenNI/*.cpp \
-	../../../../Source/OpenNI/Linux/*.cpp \
-	../../../../Externals/TinyXml/*.cpp
+	../../../../Source/OpenNI/Linux/*.cpp
 
 ifeq ("$(OSTYPE)","Darwin")
 	INC_DIRS += /opt/local/include
@@ -24,6 +22,13 @@ ifneq ("$(OSTYPE)","Darwin")
 	USED_LIBS += rt 
 endif
 DEFINES = XN_EXPORTS
+
+ifeq ($(shell ld -ltinyxml -o /dev/null 1>&2 2> /dev/null; echo $$?), 0)
+  USED_LIBS += tinyxml
+else
+  INC_DIRS  += ../../../../Source/External/TinyXml
+  SRC_FILES += ../../../../Source/External/TinyXml/*.cpp
+endif
 
 include ../Common/CommonCppMakefile
 
