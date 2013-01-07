@@ -151,7 +151,6 @@ XnStatus xnUSBAsynchThreadAddRef()
 		if (nRetVal != 0)
 		{
 			xnLogWarning(XN_MASK_USB, "USB events thread: Failed to set thread priority to critical. This might cause loss of data...");
-			printf("Warning: USB events thread - failed to set priority. This might cause loss of data...\n");
 		}
 	}
 	
