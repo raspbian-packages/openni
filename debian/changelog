@@ -1,3 +1,9 @@
+openni (1.5.4.0-6) unstable; urgency=low
+
+  * Initial upload to Debian (Closes: #607160)
+
+ -- Hans-Christoph Steiner <hans@eds.org>  Sun, 19 May 2013 21:26:15 -0400
+
 openni (1.5.4.0-5) unstable; urgency=low
 
   * Fix USB code and printf
@@ -25,10 +31,6 @@ openni (1.5.4.0-2) unstable; urgency=low
 
 openni (1.5.4.0-1) unstable; urgency=low
 
-  [ Hans-Christoph Steiner ]
-  * Initial release (Closes: #607160)
-
-  [ Jochen Sprickerhof ]
   * Fix clean target in rules to work cross platform.
   * Fix rules
   * Add patch to fix preprocessor symbol with C++11
