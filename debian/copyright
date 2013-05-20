@@ -1,14 +1,15 @@
-Format-Specification: http://svn.debian.org/wsvn/dep/web/deps/dep5.mdwn?rev=135
-Name: openni
-Maintainer: Hans-Christoph Steiner
-Source: https://github.com/OpenNI/OpenNI/tarball/Stable-1.5.2.23
+Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: openni
+Upstream-Contact: OpenNI, http://www.openni.org/contact-us
+Source: https://github.com/OpenNI/OpenNI/tags
 
 Copyright: 2010-2011, PrimeSense Ltd.
 License: GPL-3+
 
 Files: debian/*
-Copyright: 2010-2011, Hans-Christoph Steiner <hans@eds.org>
-	2011, Cosimo Alfarano <kalfa@debian.org>
+Copyright: 2010-2011, 2013, Hans-Christoph Steiner <hans@eds.org>
+           2011, Cosimo Alfarano <kalfa@debian.org>
+           2012, Jochen Sprickerhof <jochen@sprickerhof.de>
 License: GPL-3+
 
 
