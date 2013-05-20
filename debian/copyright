@@ -1,8 +1,9 @@
 Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: openni
+Upstream-Name: OpenNI
 Upstream-Contact: OpenNI, http://www.openni.org/contact-us
 Source: https://github.com/OpenNI/OpenNI/tags
 
+Files: *
 Copyright: 2010-2011, PrimeSense Ltd.
 License: GPL-3+
 
