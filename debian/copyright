@@ -4,15 +4,31 @@ Upstream-Contact: OpenNI, http://www.openni.org/contact-us
 Source: https://github.com/OpenNI/OpenNI/tags
 
 Files: *
-Copyright: 2010-2011, PrimeSense Ltd.
-License: GPL-3+
+Copyright: 2010-2012, PrimeSense Ltd.
+License: LGPL-3+
 
 Files: debian/*
 Copyright: 2010-2011, 2013, Hans-Christoph Steiner <hans@eds.org>
            2011, Cosimo Alfarano <kalfa@debian.org>
-           2012, Jochen Sprickerhof <jochen@sprickerhof.de>
+           2012-2013, Jochen Sprickerhof <jochen@sprickerhof.de>
 License: GPL-3+
 
+License: LGPL-3+
+ This library is free software: you can redistribute it and/or
+ modify it under the terms of the GNU Lesser General Public
+ License as published by the Free Software Foundation; either
+ version 3 of the License, or (at your option) any later version.
+ .
+ This library is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ Lesser General Public License for more details.
+ .
+ You should have received a copy of the GNU Lesser General Public
+ License along with this library.  If not, see
+ <http://www.gnu.org/licenses/>.
+X-Comment: On Debian systems, the complete text of the GNU Lesser General
+ Public License version 3 can be found in `/usr/share/common-licenses/LGPL-3'.
 
 License: GPL-3+
  This package is free software; you can redistribute it and/or modify
