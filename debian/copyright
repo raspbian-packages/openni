@@ -7,6 +7,10 @@ Files: *
 Copyright: 2010-2012, PrimeSense Ltd.
 License: LGPL-3+
 
+Files: debian/OpenNI_UserGuide.docx
+Copyright: 2010-2012, PrimeSense Ltd.
+License: LGPL-3+
+
 Files: External/LibJPEG/*
 Copyright: 1991-1998, Thomas G. Lane.
 License: LibJPEG
