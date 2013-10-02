@@ -1,8 +1,13 @@
 openni (1.5.4.0-6) unstable; urgency=low
 
   * Initial upload to Debian (Closes: #607160)
+  * Standards-Version: 3.9.4
+  * added .docx source to included Documentation/OpenNI_UserGuide.pdf
+  * updated debian/copyright to copyright-format/1.0
+  * include all relevant copyright statements and licenses
+  * include relevant documentation in doc-base
 
- -- Hans-Christoph Steiner <hans@eds.org>  Sun, 19 May 2013 21:26:15 -0400
+ -- Hans-Christoph Steiner <hans@eds.org>  Tue, 01 Oct 2013 20:53:53 -0400
 
 openni (1.5.4.0-5) unstable; urgency=low
 
