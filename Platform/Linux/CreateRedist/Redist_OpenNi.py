@@ -192,8 +192,6 @@ else:
 
     MAKE_ARGS = ''
 
-MAKE_ARGS += ' -j' + calc_jobs_number()
-
 if ostype == "Darwin":
     TARGET = "MacOSX"
 else:
