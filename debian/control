@@ -23,7 +23,7 @@ Package: libopenni0
 Architecture: any
 Depends: ${shlibs:Depends},
          ${misc:Depends}
-Recommends: libopenni-sensor-primesense0
+Recommends: libopenni-sensor-pointclouds0 | libopenni-sensor-primesense0
 Conflicts: openni-dev
 Description: framework for sensor-based 'Natural Interaction'
  OpenNI is a framework for getting data to support 'Natural Interaction',
