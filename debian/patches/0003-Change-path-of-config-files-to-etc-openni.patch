@@ -15,8 +15,7 @@ Subject: Change path of config files to /etc/openni
  Samples/NiUserSelection/UserTracker.cpp             |    2 +-
  Samples/NiUserTracker/main.cpp                      |    2 +-
  Samples/NiViewer/NiViewer.cpp                       |    2 +-
- Source/OpenNI/XnOpenNI.cpp                          |    4 ++--
- 13 files changed, 15 insertions(+), 15 deletions(-)
+ 12 files changed, 13 insertions(+), 13 deletions(-)
 
 diff --git a/Samples/NiAudioSample/NiAudioSample.cpp b/Samples/NiAudioSample/NiAudioSample.cpp
 index a7acdf3..b57463b 100644
@@ -181,19 +180,3 @@ index 9e9d8f4..72f5dfb 100644
  
  // --------------------------------
  // Types
-diff --git a/Source/OpenNI/XnOpenNI.cpp b/Source/OpenNI/XnOpenNI.cpp
-index 7bf268a..3ecb895 100644
---- a/Source/OpenNI/XnOpenNI.cpp
-+++ b/Source/OpenNI/XnOpenNI.cpp
-@@ -7061,9 +7061,9 @@ XN_C_API XnStatus xnScriptNodeRun(XnNodeHandle hScript, XnEnumerationErrors* pEr
- #if (XN_PLATFORM == XN_PLATFORM_WIN32)
- 	#define XN_OPEN_NI_FILES_LOCATION "\\Data\\"
- #elif (CE4100)
--	#define XN_OPEN_NI_FILES_LOCATION "/usr/etc/ni/"
-+	#define XN_OPEN_NI_FILES_LOCATION "/etc/openni/"
- #elif (XN_PLATFORM == XN_PLATFORM_LINUX_X86 || XN_PLATFORM == XN_PLATFORM_LINUX_ARM || XN_PLATFORM == XN_PLATFORM_MACOSX)
--	#define XN_OPEN_NI_FILES_LOCATION "/var/lib/ni/"
-+	#define XN_OPEN_NI_FILES_LOCATION "/etc/openni/"
- #elif (XN_PLATFORM == XN_PLATFORM_ANDROID_ARM)
- 	#define XN_OPEN_NI_FILES_LOCATION "/data/ni/"
- #else
