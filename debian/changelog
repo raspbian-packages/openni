@@ -1,3 +1,12 @@
+openni (1.5.4.0-7) unstable; urgency=low
+
+  [ Jochen Sprickerhof ]
+  * Add libopenni-sensor-pointclouds0 as an alternative
+  * Remove -j from make flags (fixes bug on arm)
+  * Move {licenses,modules}.xml to /var/lib/ni/ (Closes: #734768, #734894)
+
+ -- Hans-Christoph Steiner <hans@eds.org>  Tue, 25 Feb 2014 11:29:08 -0500
+
 openni (1.5.4.0-6) unstable; urgency=low
 
   * Initial upload to Debian (Closes: #607160)
