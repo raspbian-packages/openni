@@ -11,3 +11,4 @@
 0011-do-not-compile-windows-chm-file.patch
 0012-Remove-j-from-make-flags-fixes-bug-on-arm.patch
 0013-Enabled-ppc.patch
+0013-Add-ARM-support.patch

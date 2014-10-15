@@ -1,0 +1,80 @@
+From 9078f29dbc0dff7914a7c1de1b227a0e9f961080 Mon Sep 17 00:00:00 2001
+From: Joe Burmeister <joe@suaveairapps.co.uk>
+Date: Wed, 15 Oct 2014 09:54:19 +0000
+Subject: [PATCH 1/2] Quick changes to support armhf.
+
+---
+ Externals/PSCommon/Linux/Build/Platform.Arm  | 2 +-
+ Platform/Linux/Build/Common/Platform.Arm     | 2 +-
+ Platform/Linux/CreateRedist/Redist_OpenNi.py | 2 +-
+ 3 files changed, 3 insertions(+), 3 deletions(-)
+
+diff --git a/Externals/PSCommon/Linux/Build/Platform.Arm b/Externals/PSCommon/Linux/Build/Platform.Arm
+index c85cfb7..2341ed0 100644
+--- a/Externals/PSCommon/Linux/Build/Platform.Arm
++++ b/Externals/PSCommon/Linux/Build/Platform.Arm
+@@ -1,7 +1,7 @@
+ ifeq "$(CFG)" "Release"
+ 
+     # Hardware specifying flags
+-    CFLAGS += -march=armv7-a -mtune=cortex-a8 -mfpu=neon -mfloat-abi=softfp #-mcpu=cortex-a8
++    CFLAGS += -march=armv7-a -mtune=cortex-a8 -mfpu=neon #-mcpu=cortex-a8
+ 
+     # Optimization level, minus currently buggy optimizing methods (which break bit-exact)
+     CFLAGS += -O3 -fno-tree-pre -fno-strict-aliasing
+diff --git a/Platform/Linux/Build/Common/Platform.Arm b/Platform/Linux/Build/Common/Platform.Arm
+index c85cfb7..2341ed0 100644
+--- a/Platform/Linux/Build/Common/Platform.Arm
++++ b/Platform/Linux/Build/Common/Platform.Arm
+@@ -1,7 +1,7 @@
+ ifeq "$(CFG)" "Release"
+ 
+     # Hardware specifying flags
+-    CFLAGS += -march=armv7-a -mtune=cortex-a8 -mfpu=neon -mfloat-abi=softfp #-mcpu=cortex-a8
++    CFLAGS += -march=armv7-a -mtune=cortex-a8 -mfpu=neon #-mcpu=cortex-a8
+ 
+     # Optimization level, minus currently buggy optimizing methods (which break bit-exact)
+     CFLAGS += -O3 -fno-tree-pre -fno-strict-aliasing
+diff --git a/Platform/Linux/CreateRedist/Redist_OpenNi.py b/Platform/Linux/CreateRedist/Redist_OpenNi.py
+index 0d667cf..fcabbbd 100755
+--- a/Platform/Linux/CreateRedist/Redist_OpenNi.py
++++ b/Platform/Linux/CreateRedist/Redist_OpenNi.py
+@@ -349,7 +349,7 @@ if PLATFORM == 'CE4100':
+ 
+ if PLATFORM == 'Arm':
+     samples_list.remove('NiUserTracker')
+-    samples_list.remove('NiViewer')
++    #samples_list.remove('NiViewer')
+     samples_list.remove('NiSimpleViewer')
+     samples_list.remove('NiHandTracker')
+     samples_list.remove('NiUserSelection')
+-- 
+1.9.1
+
+
+From 41581798c17914f88fef9ec9f674501b042e5962 Mon Sep 17 00:00:00 2001
+From: Joe Burmeister <joe@suaveairapps.co.uk>
+Date: Wed, 15 Oct 2014 11:11:24 +0000
+Subject: [PATCH 2/2] Add NiViewer for ARM.
+
+---
+ Platform/Linux/Build/Common/Platform.Arm | 6 ++++++
+ 1 file changed, 6 insertions(+)
+
+diff --git a/Platform/Linux/Build/Common/Platform.Arm b/Platform/Linux/Build/Common/Platform.Arm
+index 2341ed0..07144a3 100644
+--- a/Platform/Linux/Build/Common/Platform.Arm
++++ b/Platform/Linux/Build/Common/Platform.Arm
+@@ -1,3 +1,9 @@
++# take this file's dir
++COMMON_MAK_DIR = $(dir $(lastword $(MAKEFILE_LIST)))
++
++export GLUT_SUPPORTED=1
++
++
+ ifeq "$(CFG)" "Release"
+ 
+     # Hardware specifying flags
+-- 
+1.9.1
+
