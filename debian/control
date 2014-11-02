@@ -26,6 +26,8 @@ Depends: ${shlibs:Depends},
          ${misc:Depends}
 Recommends: libopenni-sensor-pointclouds0 | libopenni-sensor-primesense0
 Conflicts: openni-dev
+Breaks: openni-utils (<< 1.5.4.0-8)
+Replaces: openni-utils (<< 1.5.4.0-8)
 Description: framework for sensor-based 'Natural Interaction'
  OpenNI is a framework for getting data to support 'Natural Interaction',
  i.e. skeleton tracking, gesture tracking, and similar ways of getting data
