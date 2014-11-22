@@ -14,7 +14,9 @@ case "$1" in
     if [ -n "$2" ] && dpkg --compare-versions "$2" lt-nl "1.5.4.0-8"; then
       mv /var/lib/ni/licenses.xml.dpkg-old /var/lib/ni/licenses.xml
       mv /var/lib/ni/modules.xml.dpkg-old /var/lib/ni/modules.xml
-    else
+    fi
+    # Only register upon fresh install
+    if [ -z "$2" ]; then
       niLicense PrimeSense 0KOIk2JeIBYClPWVnMoRKn5cdY4=
       for module in $MODULES; do
         niReg -r $MODULE_DIR/$module /etc/openni
