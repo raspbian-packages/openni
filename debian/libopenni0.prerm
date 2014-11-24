@@ -1,0 +1,18 @@
+#!/bin/sh
+
+set -e
+
+MODULE_DIR="/usr/lib/"
+MODULES="libnimMockNodes.so.0 libnimCodecs.so.0 libnimRecorder.so.0"
+
+case "$1" in
+  remove)
+    for module in $MODULES; do
+      niReg -u $MODULE_DIR/$module /etc/openni
+    done
+    ;;
+esac
+
+#DEBHELPER#
+
+exit 0

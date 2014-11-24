@@ -1,0 +1,30 @@
+#!/bin/sh
+
+set -e
+
+dpkg-maintscript-helper mv_conffile /etc/openni/modules.xml /var/lib/ni/modules.xml 1.5.4.0-7~ libopenni0 -- "$@"
+dpkg-maintscript-helper mv_conffile /etc/openni/licenses.xml /var/lib/ni/licenses.xml 1.5.4.0-7~ libopenni0 -- "$@"
+
+MODULE_DIR="/usr/lib/"
+MODULES="libnimMockNodes.so.0 libnimCodecs.so.0 libnimRecorder.so.0"
+
+case "$1" in
+  configure)
+    # Fix for #767653
+    if [ -n "$2" ] && dpkg --compare-versions "$2" lt-nl "1.5.4.0-8"; then
+      mv /var/lib/ni/licenses.xml.dpkg-old /var/lib/ni/licenses.xml
+      mv /var/lib/ni/modules.xml.dpkg-old /var/lib/ni/modules.xml
+    fi
+    # Only register upon fresh install
+    if [ -z "$2" ]; then
+      niLicense PrimeSense 0KOIk2JeIBYClPWVnMoRKn5cdY4=
+      for module in $MODULES; do
+        niReg -r $MODULE_DIR/$module /etc/openni
+      done
+    fi
+    ;;
+esac
+
+#DEBHELPER#
+
+exit 0
