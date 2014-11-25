@@ -1,10 +1,9 @@
-openni (1.5.4.0-8) unstable; urgency=medium
+openni (1.5.4.0-8) UNRELEASED; urgency=medium
 
-  * Add Doxygen db to clean target
-  * Generate {licenses,modules}.xml (Closes: #767653)
-  * postinst: register modules only upon fresh install
+  * Do not ship but generate {licenses,modules}.xml at install time
+    (Closes: #767653)
 
- -- Jochen Sprickerhof <debian@jochen.sprickerhof.de>  Sun, 23 Nov 2014 14:39:26 +0100
+ -- Jochen Sprickerhof <debian@jochen.sprickerhof.de>  Mon, 24 Nov 2014 22:33:38 +0100
 
 openni (1.5.4.0-7) unstable; urgency=low
 

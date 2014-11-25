@@ -1,4 +1,2 @@
 Platform/Linux/Bin/*-Release/lib*.so.* usr/lib/
 Data/SamplesConfig.xml etc/openni/
-Platform/Linux/Bin/*-Release/niReg usr/bin/
-Platform/Linux/Bin/*-Release/niLicense usr/bin/
