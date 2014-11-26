@@ -1,4 +1,4 @@
-openni (1.5.4.0-8) UNRELEASED; urgency=medium
+openni (1.5.4.0-8) unstable; urgency=medium
 
   * Do not ship but generate {licenses,modules}.xml at install time
     (Closes: #767653)
