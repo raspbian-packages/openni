@@ -5,9 +5,6 @@ set -e
 dpkg-maintscript-helper mv_conffile /etc/openni/modules.xml /var/lib/ni/modules.xml 1.5.4.0-7~ libopenni0 -- "$@"
 dpkg-maintscript-helper mv_conffile /etc/openni/licenses.xml /var/lib/ni/licenses.xml 1.5.4.0-7~ libopenni0 -- "$@"
 
-MODULE_DIR="/usr/lib/"
-MODULES="libnimMockNodes.so.0 libnimCodecs.so.0 libnimRecorder.so.0"
-
 case "$1" in
   configure)
     # Fix for #767653
@@ -17,9 +14,14 @@ case "$1" in
     fi
     # Only register upon fresh install
     if [ -z "$2" ]; then
-      for module in $MODULES; do
-        niReg -r $MODULE_DIR/$module /etc/openni
-      done
+      # manually generate modules.xml, so we don't have a cyclic dependency to openni-utils
+      cat > /var/lib/ni/modules.xml <<EOF
+<Modules>
+    <Module path="/usr/lib/libnimMockNodes.so.0" configDir="/etc/openni" />
+    <Module path="/usr/lib/libnimCodecs.so.0" configDir="/etc/openni" />
+    <Module path="/usr/lib/libnimRecorder.so.0" configDir="/etc/openni" />
+</Modules>
+EOF
     fi
     ;;
 esac
