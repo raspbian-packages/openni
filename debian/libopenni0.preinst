@@ -12,6 +12,7 @@ case "$1" in
       mv /var/lib/ni/licenses.xml /var/lib/ni/licenses.xml.dpkg-old
       mv /var/lib/ni/modules.xml /var/lib/ni/modules.xml.dpkg-old
     fi
+    ;;
 esac
 
 #DEBHELPER#
