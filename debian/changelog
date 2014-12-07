@@ -1,9 +1,12 @@
 openni (1.5.4.0-9) unstable; urgency=medium
 
+  * Standards-Version: 3.9.6 (no changes)
+
+  [ Jochen Sprickerhof ]
   * Remove license stuff (cf. #771189)
   * Manually generate modules.xml (Closes: #771518)
 
- -- Jochen Sprickerhof <debian@jochen.sprickerhof.de>  Tue, 02 Dec 2014 00:17:49 +0100
+ -- Hans-Christoph Steiner <hans@eds.org>  Sun, 07 Dec 2014 20:20:51 +0100
 
 openni (1.5.4.0-8) unstable; urgency=medium
 
