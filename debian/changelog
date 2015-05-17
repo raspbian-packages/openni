@@ -1,7 +1,8 @@
 openni (1.5.4.0-10) unstable; urgency=medium
 
   [ Fernando Seiti Furusato ]
-  * Enabled ppc
+  * Enabled ppc (Closes: #734110). Thanks Roland Stigge and Fernando Seiti
+    Furusato.
 
  -- Jochen Sprickerhof <debian@jochen.sprickerhof.de>  Sun, 17 May 2015 22:12:06 +0200
 
