@@ -1,3 +1,10 @@
+openni (1.5.4.0-10) unstable; urgency=medium
+
+  [ Fernando Seiti Furusato ]
+  * Enabled ppc
+
+ -- Jochen Sprickerhof <debian@jochen.sprickerhof.de>  Sun, 17 May 2015 22:12:06 +0200
+
 openni (1.5.4.0-9) unstable; urgency=medium
 
   * Standards-Version: 3.9.6 (no changes)
