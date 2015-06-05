@@ -4,7 +4,11 @@ openni (1.5.4.0-10) unstable; urgency=medium
   * Enabled ppc (Closes: #734110). Thanks Roland Stigge and Fernando Seiti
     Furusato.
 
- -- Jochen Sprickerhof <debian@jochen.sprickerhof.de>  Sun, 17 May 2015 22:12:06 +0200
+  [ Jochen Sprickerhof ]
+  * Clean up doxygen_sqlite3.db in override_dh_auto_clean
+  * Add myself to uploaders
+
+ -- Jochen Sprickerhof <debian@jochen.sprickerhof.de>  Fri, 05 Jun 2015 19:33:32 +0200
 
 openni (1.5.4.0-9) unstable; urgency=medium
 
