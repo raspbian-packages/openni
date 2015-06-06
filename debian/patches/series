@@ -12,3 +12,4 @@
 0012-Remove-j-from-make-flags-fixes-bug-on-arm.patch
 0013-Enabled-ppc.patch
 0013-Add-ARM-support.patch
+0014-Add-arm64-support.patch
