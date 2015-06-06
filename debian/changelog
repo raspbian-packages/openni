@@ -1,3 +1,9 @@
+openni (1.5.4.0-12) unstable; urgency=medium
+
+  * Add arm64 support (Closes: #787905), thanks Edmund Grimley Evans
+
+ -- Jochen Sprickerhof <debian@jochen.sprickerhof.de>  Sat, 06 Jun 2015 23:32:22 +0200
+
 openni (1.5.4.0-11) unstable; urgency=medium
 
   [ Joe Burmeister ]
