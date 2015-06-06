@@ -1,3 +1,11 @@
+openni (1.5.4.0-11) unstable; urgency=medium
+
+  [ Joe Burmeister ]
+  * Add ARM-hf support.
+  * Update ARM support patch to remove line disabling NiViewer.
+
+ -- Jochen Sprickerhof <debian@jochen.sprickerhof.de>  Sat, 06 Jun 2015 09:28:05 +0200
+
 openni (1.5.4.0-10) unstable; urgency=medium
 
   [ Fernando Seiti Furusato ]
