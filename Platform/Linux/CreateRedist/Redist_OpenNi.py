@@ -186,6 +186,8 @@ else:
         PLATFORM = "x86"
     elif machinetype[:3] == "arm":
         PLATFORM = "Arm"
+    elif machinetype == "aarch64":
+        PLATFORM = "AArch64"
     elif machinetype[:3] == "ppc":
         PLATFORM = "Powerpc"
     else:
@@ -335,6 +337,7 @@ for includeFile in os.listdir("../../Include"):
 
 shutil.copytree("../../Include/Linux-x86", REDIST_DIR + "/Include/Linux-x86")
 shutil.copytree("../../Include/Linux-Arm", REDIST_DIR + "/Include/Linux-Arm")
+shutil.copytree("../../Include/Linux-AArch64", REDIST_DIR + "/Include/Linux-AArch64")
 shutil.copytree("../../Include/Linux-Powerpc", REDIST_DIR + "/Include/Linux-Powerpc")
 shutil.copytree("../../Include/MacOSX", REDIST_DIR + "/Include/MacOSX")
 shutil.copytree("Build/Common", REDIST_DIR + "/Samples/Build/Common")
