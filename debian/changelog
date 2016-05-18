@@ -1,0 +1,114 @@
+openni (1.5.4.0-14+rpi1) stretch-staging; urgency=medium
+
+  [changes brought forward from 1.5.4.0-13+rpi1 by Peter Michael Green <plugwash@raspbian.org> at Sat, 12 Sep 2015 00:02:32 +0000]
+  * Remove wrong compiler flags for arm.
+
+ -- Raspbian forward porter <root@raspbian.org>  Wed, 18 May 2016 00:06:59 +0000
+
+openni (1.5.4.0-14) unstable; urgency=medium
+
+  * Fix gcc6 compability (Closes: #811848).
+
+ -- Jochen Sprickerhof <debian@jochen.sprickerhof.de>  Sat, 23 Jan 2016 15:38:49 +0100
+
+openni (1.5.4.0-13) unstable; urgency=medium
+
+  * Add patch to support mipsel. Thanks to Gustavo Prado Alkmim. Closes: #788680
+
+ -- Jochen Sprickerhof <debian@jochen.sprickerhof.de>  Tue, 28 Jul 2015 09:54:30 +0200
+
+openni (1.5.4.0-12) unstable; urgency=medium
+
+  * Add arm64 support (Closes: #787905), thanks Edmund Grimley Evans
+
+ -- Jochen Sprickerhof <debian@jochen.sprickerhof.de>  Sat, 06 Jun 2015 23:32:22 +0200
+
+openni (1.5.4.0-11) unstable; urgency=medium
+
+  [ Joe Burmeister ]
+  * Add ARM-hf support.
+  * Update ARM support patch to remove line disabling NiViewer.
+
+ -- Jochen Sprickerhof <debian@jochen.sprickerhof.de>  Sat, 06 Jun 2015 09:28:05 +0200
+
+openni (1.5.4.0-10) unstable; urgency=medium
+
+  [ Fernando Seiti Furusato ]
+  * Enabled ppc (Closes: #734110). Thanks Roland Stigge and Fernando Seiti
+    Furusato.
+
+  [ Jochen Sprickerhof ]
+  * Clean up doxygen_sqlite3.db in override_dh_auto_clean
+  * Add myself to uploaders
+
+ -- Jochen Sprickerhof <debian@jochen.sprickerhof.de>  Fri, 05 Jun 2015 19:33:32 +0200
+
+openni (1.5.4.0-9) unstable; urgency=medium
+
+  * Standards-Version: 3.9.6 (no changes)
+
+  [ Jochen Sprickerhof ]
+  * Remove license stuff (cf. #771189)
+  * Manually generate modules.xml (Closes: #771518)
+
+ -- Hans-Christoph Steiner <hans@eds.org>  Sun, 07 Dec 2014 20:20:51 +0100
+
+openni (1.5.4.0-8) unstable; urgency=medium
+
+  * Do not ship but generate {licenses,modules}.xml at install time
+    (Closes: #767653)
+
+ -- Jochen Sprickerhof <debian@jochen.sprickerhof.de>  Mon, 24 Nov 2014 22:33:38 +0100
+
+openni (1.5.4.0-7) unstable; urgency=low
+
+  [ Jochen Sprickerhof ]
+  * Add libopenni-sensor-pointclouds0 as an alternative
+  * Remove -j from make flags (fixes bug on arm)
+  * Move {licenses,modules}.xml to /var/lib/ni/ (Closes: #734768, #734894)
+
+ -- Hans-Christoph Steiner <hans@eds.org>  Tue, 25 Feb 2014 11:29:08 -0500
+
+openni (1.5.4.0-6) unstable; urgency=low
+
+  * Initial upload to Debian (Closes: #607160)
+  * Standards-Version: 3.9.4
+  * added .docx source to included Documentation/OpenNI_UserGuide.pdf
+  * updated debian/copyright to copyright-format/1.0
+  * include all relevant copyright statements and licenses
+  * include relevant documentation in doc-base
+
+ -- Hans-Christoph Steiner <hans@eds.org>  Tue, 01 Oct 2013 20:53:53 -0400
+
+openni (1.5.4.0-5) unstable; urgency=low
+
+  * Fix USB code and printf
+  * Adapt to libopenni-sensor-primesense SONAME bump
+
+ -- Jochen Sprickerhof <launchpad@jochen.sprickerhof.de>  Tue, 08 Jan 2013 00:40:17 +0100
+
+openni (1.5.4.0-4) unstable; urgency=low
+
+  * Simplify pkg-config file
+
+ -- Jochen Sprickerhof <launchpad@jochen.sprickerhof.de>  Fri, 28 Dec 2012 11:57:55 +0100
+
+openni (1.5.4.0-3) unstable; urgency=low
+
+  * Downgrade dependency on libopenni-sensor-primesense0 to recommends
+
+ -- Jochen Sprickerhof <launchpad@jochen.sprickerhof.de>  Thu, 27 Dec 2012 18:59:38 +0100
+
+openni (1.5.4.0-2) unstable; urgency=low
+
+  * Add dependency from libopenni0 to libopenni-sensor-primesense0
+
+ -- Jochen Sprickerhof <launchpad@jochen.sprickerhof.de>  Thu, 20 Dec 2012 22:33:47 +0100
+
+openni (1.5.4.0-1) unstable; urgency=low
+
+  * Fix clean target in rules to work cross platform.
+  * Fix rules
+  * Add patch to fix preprocessor symbol with C++11
+
+ -- Jochen Sprickerhof <launchpad@jochen.sprickerhof.de>  Thu, 20 Dec 2012 21:42:59 +0100
