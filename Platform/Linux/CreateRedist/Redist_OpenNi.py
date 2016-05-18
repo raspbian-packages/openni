@@ -350,7 +350,6 @@ if PLATFORM == 'CE4100':
 
 if PLATFORM == 'Arm':
     samples_list.remove('NiUserTracker')
-    samples_list.remove('NiViewer')
     samples_list.remove('NiSimpleViewer')
     samples_list.remove('NiHandTracker')
     samples_list.remove('NiUserSelection')
