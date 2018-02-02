@@ -15,8 +15,8 @@ Build-Depends: debhelper (>= 7.0.50~),
                default-jdk
 Standards-Version: 3.9.6
 Homepage: http://www.openni.org
-Vcs-Git: git://anonscm.debian.org/pkg-multimedia/openni.git
-Vcs-Browser: http://anonscm.debian.org/git/pkg-multimedia/openni.git
+Vcs-Git: https://salsa.debian.org/multimedia-team/openni.git
+Vcs-Browser: https://salsa.debian.org/multimedia-team/openni
 
 Package: libopenni0
 Architecture: any
