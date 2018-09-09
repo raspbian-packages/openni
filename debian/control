@@ -3,7 +3,7 @@ Priority: optional
 Section: libs
 Maintainer: Debian Multimedia Maintainers <debian-multimedia@lists.debian.org>
 Uploaders: Nobuhiro Iwamatsu <iwamatsu@debian.org>,
-           Jochen Sprickerhof <debian@jochen.sprickerhof.de>
+           Jochen Sprickerhof <jspricke@debian.org>
 Build-Depends: debhelper (>= 7.0.50~),
                freeglut3-dev,
                libusb-1.0-0-dev (>= 1.0.8),
