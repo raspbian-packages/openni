@@ -1,3 +1,33 @@
+openni (1.5.4.0+dfsg-1) unstable; urgency=medium
+
+  [ Hans-Christoph Steiner ]
+  * remove myself from Uploaders
+
+  [ Jochen Sprickerhof ]
+  * Remove Cosimo Alfarano from Uploaders (Closes: #846821)
+  * Update Vcs URLs to salsa.d.o
+
+  [ Ondřej Nový ]
+  * d/copyright: Use https protocol in Format field
+
+  [ Jochen Sprickerhof ]
+  * Move cleanup to d/clean
+  * Add R³
+
+  [ Felipe Sateler ]
+  * Change maintainer address to debian-multimedia@lists.debian.org
+
+  [ Jochen Sprickerhof ]
+  * Update my address
+  * Add file exclude to d/copyright
+  * New upstream version 1.5.4.0+dfsg
+  * Update packaging
+  * Add patch for wrong compiler flags on arm.
+    Thanks to Peter Green (Closes: #798728)
+  * Disable mono build (Closes: #757264)
+
+ -- Jochen Sprickerhof <jspricke@debian.org>  Sat, 20 Oct 2018 00:05:29 +0200
+
 openni (1.5.4.0-14) unstable; urgency=medium
 
   * Fix gcc6 compatibility (Closes: #811848).
