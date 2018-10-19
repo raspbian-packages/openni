@@ -1,6 +1,6 @@
 openni (1.5.4.0-14) unstable; urgency=medium
 
-  * Fix gcc6 compability (Closes: #811848).
+  * Fix gcc6 compatibility (Closes: #811848).
 
  -- Jochen Sprickerhof <debian@jochen.sprickerhof.de>  Sat, 23 Jan 2016 15:38:49 +0100
 
