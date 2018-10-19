@@ -2,6 +2,8 @@ Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: OpenNI
 Upstream-Contact: OpenNI, http://www.openni.org/contact-us
 Source: https://github.com/OpenNI/OpenNI/tags
+Files-Excluded: Documentation/OpenNI.chm
+Comment: prebuilt ms help file
 
 Files: *
 Copyright: 2010-2012, PrimeSense Ltd.
