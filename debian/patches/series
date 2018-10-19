@@ -15,3 +15,4 @@
 0014-Add-arm64-support.patch
 0015-Add-mipsel-support.patch
 0016-Rename-equivalent-to-fix-compilation-on-gcc6.patch
+0017-Remove-wrong-compiler-flags-for-arm.patch
