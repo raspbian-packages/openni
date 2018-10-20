@@ -1,3 +1,9 @@
+openni (1.5.4.0+dfsg-2) unstable; urgency=medium
+
+  * Recover directory (Closes: #911448)
+
+ -- Jochen Sprickerhof <jspricke@debian.org>  Sat, 20 Oct 2018 16:15:36 +0200
+
 openni (1.5.4.0+dfsg-1) unstable; urgency=medium
 
   [ Hans-Christoph Steiner ]
