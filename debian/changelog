@@ -1,3 +1,17 @@
+openni (1.5.4.0+dfsg-3) unstable; urgency=medium
+
+  [ Ondřej Nový ]
+  * Use debhelper-compat instead of debian/compat
+
+  [ Jochen Sprickerhof ]
+  * Port to Python 3 (Closes: #937205)
+  * Bump policy version (no changes)
+  * Bump debhelper version
+  * Drop migration from version before old-old-stable
+  * add Salsa CI
+
+ -- Jochen Sprickerhof <jspricke@debian.org>  Sat, 14 Sep 2019 09:20:36 +0200
+
 openni (1.5.4.0+dfsg-2) unstable; urgency=medium
 
   * Recover directory (Closes: #911448)
