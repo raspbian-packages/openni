@@ -18,3 +18,4 @@
 0017-Remove-wrong-compiler-flags-for-arm.patch
 0018-Disable-mono-build.patch
 0019-Port-to-Python-3.patch
+0020-Switch-to-__i386__-as-i386-is-not-defined-in-std-c-1.patch
