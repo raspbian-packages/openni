@@ -1,3 +1,10 @@
+openni (1.5.4.0+dfsg-4) unstable; urgency=medium
+
+  * Add patch for __i386__ pragma
+  * bump policy version (no changes)
+
+ -- Jochen Sprickerhof <jspricke@debian.org>  Tue, 28 Jan 2020 20:42:45 +0100
+
 openni (1.5.4.0+dfsg-3) unstable; urgency=medium
 
   [ Ondřej Nový ]
