@@ -1,6 +1,8 @@
 openni (1.5.4.0+dfsg-5) UNRELEASED; urgency=low
 
   * Move source package lintian overrides to debian/source.
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository,
+    Repository-Browse.
 
  -- Debian Janitor <janitor@jelmer.uk>  Sun, 19 Jul 2020 21:35:25 -0000
 
