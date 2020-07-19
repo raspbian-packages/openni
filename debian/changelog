@@ -1,3 +1,9 @@
+openni (1.5.4.0+dfsg-5) UNRELEASED; urgency=low
+
+  * Move source package lintian overrides to debian/source.
+
+ -- Debian Janitor <janitor@jelmer.uk>  Sun, 19 Jul 2020 21:35:25 -0000
+
 openni (1.5.4.0+dfsg-4) unstable; urgency=medium
 
   * Add patch for __i386__ pragma
