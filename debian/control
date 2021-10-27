@@ -66,6 +66,7 @@ Description: debug and test utilities OpenNI framework
 Package: libopenni-dev
 Section: libdevel
 Architecture: any
+Multi-Arch: same
 Depends: ${misc:Depends},
          libopenni0 (= ${binary:Version})
 Suggests: openni-doc
