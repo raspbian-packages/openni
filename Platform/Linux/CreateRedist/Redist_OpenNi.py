@@ -192,6 +192,8 @@ else:
         PLATFORM = "Powerpc"
     elif machinetype[:4] == "mips":
         PLATFORM = "Mips"
+    elif machinetype == "riscv64":
+        PLATFORM = "Riscv64"
     else:
         print("Unknown platform:", machinetype)
         finish_script(1)
@@ -336,6 +338,7 @@ shutil.copytree("../../Include/Linux-Arm", REDIST_DIR + "/Include/Linux-Arm")
 shutil.copytree("../../Include/Linux-AArch64", REDIST_DIR + "/Include/Linux-AArch64")
 shutil.copytree("../../Include/Linux-Powerpc", REDIST_DIR + "/Include/Linux-Powerpc")
 shutil.copytree("../../Include/Linux-Mips", REDIST_DIR + "/Include/Linux-Mips")
+shutil.copytree("../../Include/Linux-Riscv64", REDIST_DIR + "/Include/Linux-Riscv64")
 shutil.copytree("../../Include/MacOSX", REDIST_DIR + "/Include/MacOSX")
 shutil.copytree("Build/Common", REDIST_DIR + "/Samples/Build/Common")
 
