@@ -24,6 +24,8 @@ else ifneq (,$(findstring ppc,$(MACHINE)))
 	HOST_PLATFORM = Powerpc
 else ifneq (,$(findstring mips,$(MACHINE)))
 	HOST_PLATFORM = Mips
+else ifneq (,$(findstring riscv64,$(MACHINE)))
+	HOST_PLATFORM = Riscv64
 else
 	DUMMY:=$(error Can't determine host platform)
 endif
