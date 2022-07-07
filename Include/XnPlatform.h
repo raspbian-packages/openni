@@ -38,6 +38,7 @@
 #define XN_PLATFORM_LINUX_POWERPC 10
 #define XN_PLATFORM_LINUX_AARCH64 11
 #define XN_PLATFORM_LINUX_MIPS 12
+#define XN_PLATFORM_LINUX_RISCV64 13
 
 #define XN_PLATFORM_IS_LITTLE_ENDIAN 1
 #define XN_PLATFORM_IS_BIG_ENDIAN    2
@@ -75,6 +76,8 @@
 	#include "Linux-Powerpc/XnPlatformLinux-Powerpc.h"
 #elif (__linux__ && __mips__)
 	#include "Linux-Mips/XnPlatformLinux-Mips.h"
+#elif (__linux__ && (__riscv && __riscv_xlen == 64))
+	#include "Linux-Riscv64/XnPlatformLinux-Riscv64.h"
 #elif _ARC
 	#include "ARC/XnPlatformARC.h"
 #elif (__APPLE__)
