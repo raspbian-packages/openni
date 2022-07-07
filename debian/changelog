@@ -1,3 +1,11 @@
+openni (1.5.4.0+dfsg-6) unstable; urgency=medium
+
+  * Add patch for riscv64.
+    Thanks to Bo YU (Closes: #1014442)
+  * Bump policy version (no changes)
+
+ -- Jochen Sprickerhof <jspricke@debian.org>  Thu, 07 Jul 2022 11:31:26 +0200
+
 openni (1.5.4.0+dfsg-5) unstable; urgency=medium
 
   [ Debian Janitor ]
