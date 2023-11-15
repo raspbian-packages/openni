@@ -1,0 +1,13 @@
+Document: openni-user-guide
+Title: OpenNI User Guide
+Author: PrimeSense, Inc.
+Abstract: OpenNI (Open Natural Interaction) is a multi-language,
+ cross-platform framework that defines APIs for writing applications utilizing
+ Natural Interaction. OpenNI APIs are composed of a set of interfaces for
+ writing NI applications. The main purpose of OpenNI is to form a standard API
+ that enables communication with both sensors and perception middleware for
+ both vision and audio.
+Section: Programming
+
+Format: PDF
+Files: /usr/share/doc/openni-doc/OpenNI_UserGuide.pdf.gz
