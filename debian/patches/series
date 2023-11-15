@@ -20,3 +20,4 @@
 0019-Port-to-Python-3.patch
 0020-Switch-to-__i386__-as-i386-is-not-defined-in-std-c-1.patch
 0021-Support-riscv64.patch
+0022-Add-loongarch64-support.patch
