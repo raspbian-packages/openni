@@ -1,3 +1,10 @@
+openni (1.5.4.0+dfsg-7) unstable; urgency=medium
+
+  * Add loongarch64 support (Closes: #1050419)
+  * Bump policy version (no changes)
+
+ -- Jochen Sprickerhof <jspricke@debian.org>  Wed, 15 Nov 2023 11:05:03 +0100
+
 openni (1.5.4.0+dfsg-6) unstable; urgency=medium
 
   * Add patch for riscv64.
