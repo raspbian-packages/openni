@@ -1,0 +1,2 @@
+Platform/Linux/Bin/*-Release/lib*.so.* usr/lib/
+Data/SamplesConfig.xml etc/openni/
