@@ -13,16 +13,16 @@ Files: debian/OpenNI_UserGuide.docx
 Copyright: 2010-2012, PrimeSense Ltd.
 License: LGPL-3+
 
-Files: External/LibJPEG/*
+Files: Externals/LibJPEG/*
 Copyright: 1991-1998, Thomas G. Lane.
 License: LibJPEG
 
-Files: External/PSCommon/*
+Files: Externals/PSCommon/*
 Copyright: 2003,2005-2009, Google Inc.
            2010 PrimeSense Ltd.
 License: Google
 
-Files: External/TinyXML/*
+Files: Externals/TinyXML/*
 Copyright: 2000-2006 Lee Thomason
 License: TinyXML
 
