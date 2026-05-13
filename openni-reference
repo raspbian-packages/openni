@@ -1,0 +1,13 @@
+Document: openni-reference
+Title: OpenNI User Guide
+Author: PrimeSense, Inc.
+Abstract: OpenNI is a standard interface for 3D sensor data processing
+ algorithms. It is open for all (published on web site) and open source. The
+ purpose is to define data types (depth map, color map, user pose, etc.) and
+ an interface to a module that can generate them (sensor, skeleton algorithm,
+ etc.), for 3rd party developers.
+Section: Programming
+
+Format: HTML
+Index: /usr/share/doc/openni-doc/html/index.html
+Files: /usr/share/doc/openni-doc/html/*.html
